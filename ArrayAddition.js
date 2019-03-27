@@ -9,3 +9,10 @@ function simpleArraySum (array){
 
     return sum;
 }
+
+$(document).ready(function(){
+        $("#btnClick").on('click',function(){
+            var total =simpleArraySum($("#txtInput").val());
+        $("#txtInput").val(total);
+    });
+}); 
