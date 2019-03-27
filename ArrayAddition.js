@@ -11,8 +11,11 @@ function simpleArraySum (array){
 }
 
 $(document).ready(function(){
+    
         $("#btnClick").on('click',function(){
+            
             var total =simpleArraySum($("#txtInput").val());
+            
         $("#txtInput").val(total);
     });
 }); 
